@@ -19,7 +19,7 @@ public class ReproduzirAudio {
             clip.open(audioStream);
             clip.start();
 
-            System.out.println("Reproduzindo áudio... Pressione Enter para parar.");
+            
             System.in.read();
             clip.stop();
 

@@ -83,15 +83,15 @@ public class Reproduzir {
 
     private static void reproduzirParte1(boolean sincronizado, boolean pausaInicial) {
         String verso1 = "Erguei as mãos e dai glória a Deus";
-        String refrão1 = "Erguei as mãos\nE cantai como os filhos do Senhor";
-        String fraseRefrão = "como os filhos do Senhor";
+        String fraseRefrao = "como os filhos do Senhor";
+        String refrao1 = "Erguei as mãos\nE cantai " + fraseRefrao;
         String[][] animais = {
-            {"O elefante", "E os passarinhos, " + fraseRefrão},
-            {"A minhoquinha", "E os pinguins, " + fraseRefrão},
-            {"O canguru", "E o sapinho, " + fraseRefrão}
+            {"O elefante", "E os passarinhos, " + fraseRefrao},
+            {"A minhoquinha", "E os pinguins, " + fraseRefrao},
+            {"O canguru", "E o sapinho, " + fraseRefrao}
         };
         String noe = "Deus disse a Noé: Constrói uma arca\n";
-        String construção = "Deus disse a Noé: Constrói uma arca\nQue seja feita\nDe madeira para os filhos do Senhor";
+        String construção = noe + "Que seja feita\nDe madeira para os filhos do Senhor";
 
         
         
@@ -105,7 +105,7 @@ public class Reproduzir {
                 System.out.println(verso1);
                 if (sincronizado) Thread.sleep(4000);
             }
-            System.out.println(refrão1 + "\n");
+            System.out.println(refrao1 + "\n");
             if (sincronizado) Thread.sleep(8200);
 
             for (String[] par : animais) {
@@ -130,7 +130,7 @@ public class Reproduzir {
                     System.out.println(verso1);
                     if (sincronizado) Thread.sleep(4000);
                 }
-                System.out.println(refrão1 + "\n");
+                System.out.println(refrao1 + "\n");
                 if (sincronizado) Thread.sleep(8200);
             }
         } catch (InterruptedException e) {
